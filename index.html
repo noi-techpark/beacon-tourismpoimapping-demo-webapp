@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
+    <!--
+    <script src="https://cdn.jsdelivr.net/gh/danielrampanelli/webcomp-beacons-map-table@development/dist/beacons-map-table.min.js"></script>
+    -->
+    <script src="./beacons-map-table.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 24px;
+      }
+
+      header {
+        margin: 0 0 32px 0;
+        overflow: auto;
+      }
+
+      #beacon-logo {
+        display: inline-block;
+        margin: 6px 16px 0 0;
+        vertical-align: top;
+      }
+
+      #beacon-logo img {
+        height: 49px;
+      }
+
+      #esfr-logo {
+        display: inline-block;
+        height: 64px;
+        vertical-align: top;
+      }
+
+      #beacons {
+        height: 800px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a id="beacon-logo" href="https://beacon.bz.it" target="_blank"><img src="./beacon-logo.svg"/></a>
+      <img id="esfr-logo" src="./efre-fesr-logo.jpg"/>
+    </header>
+    <beacons-map-table id="beacons" view="all" search tourism-pois />
+  </body>
+</html>
