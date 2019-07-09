@@ -12,4 +12,4 @@ Once the distribution file for the webcomponent is correctly included, it can be
 
 ## License
 
-TODO
+See LICENSE.md
