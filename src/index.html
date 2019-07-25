@@ -4,7 +4,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/gh/noi-techpark/webcomp-beacons-map-table@master/dist/beacons-map-table.min.js"></script>
     <style>
+      html {
+        height: 100%;
+      }
+
       body {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
         margin: 0;
         padding: 24px;
       }
@@ -31,7 +39,7 @@
       }
 
       #beacons {
-        height: 800px;
+        height: 100%;
         width: 100%;
       }
     </style>
