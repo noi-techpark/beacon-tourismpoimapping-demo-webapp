@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/gh/noi-techpark/webcomp-beacons-map-table@master/dist/beacons-map-table.min.js"></script>
-    <style>
-      html {
-        height: 100%;
-      }
 
-      body {
-        box-sizing: border-box;
-        display: flex;
-        flex-flow: column;
-        height: 100%;
-        margin: 0;
-        padding: 24px;
-      }
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
+  <script
+    src="https://cdn.webcomponents.opendatahub.bz.it/dist/2e117771-7047-4e26-b313-8b1a315ae75f/beacons-map-table.min.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
 
-      header {
-        margin: 0 0 32px 0;
-        overflow: auto;
-      }
+    body {
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+      margin: 0;
+      padding: 24px;
+    }
 
-      #beacon-logo {
-        display: inline-block;
-        margin: 6px 16px 0 0;
-        vertical-align: top;
-      }
+    header {
+      margin: 0 0 32px 0;
+      overflow: auto;
+    }
 
-      #beacon-logo img {
-        height: 49px;
-      }
+    #beacon-logo {
+      display: inline-block;
+      margin: 6px 16px 0 0;
+      vertical-align: top;
+    }
 
-      #esfr-logo {
-        display: inline-block;
-        height: 64px;
-        vertical-align: top;
-      }
+    #beacon-logo img {
+      height: 49px;
+    }
 
-      #beacons {
-        height: 100%;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <a id="beacon-logo" href="https://beacon.bz.it" target="_blank"><img src="./beacon-logo.svg"/></a>
-      <img id="esfr-logo" src="./efre-fesr-logo.jpg"/>
-    </header>
-    <beacons-map-table id="beacons" view="all" search tourism-pois />
-  </body>
+    #esfr-logo {
+      display: inline-block;
+      height: 64px;
+      vertical-align: top;
+    }
+
+    #beacons {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a id="beacon-logo" href="https://beacon.bz.it" target="_blank"><img src="./beacon-logo.svg" /></a>
+    <img id="esfr-logo" src="./efre-fesr-logo.jpg" />
+  </header>
+  <beacons-map-table id="beacons" view="all" search tourism-pois></beacons-map-table>
+</body>
+
 </html>
